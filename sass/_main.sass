@@ -1,0 +1,146 @@
+// Normally mainpage styles
+%in
+	width: 940px 
+	margin: 0 auto
+
+
+.topline
+	background: #114B68
+	.topline__in
+		@extend %in
+		height: 60px 
+		line-height: 60px 
+		font-size: 18px 
+		color: #fff
+		a
+			color: #fff
+			text-decoration: none
+	.topline__addpost
+		display: inline-block
+		font-weight: bold
+		i
+			display: inline-block
+			+s(addpost)
+			margin-right: 8px 
+			vertical-align: middle
+			position: relative
+			top: -2px 
+	.topline__phone
+		display: inline-block
+		margin-left: 37px 
+		i
+			display: inline-block
+			+s(phone)
+			margin-right: 8px 
+			vertical-align: middle
+			position: relative
+			top: -2px 
+	.topline__user
+		float: right
+		height: 60px 
+		line-height: 60px
+		text-align: right
+		a
+			margin: 0 4px
+			text-decoration: underline 
+	.topline__location
+		position: absolute
+		left: 530px 
+		top: 0
+		height: 60px  
+		line-height: 60px
+		i
+			+s(topline__location)
+			display: inline-block
+			margin-right: 8px 
+			vertical-align: middle
+			top: -2px 
+			position: relative
+			
+
+.header
+	opacity: .9
+	background-color: #3383b1
+	.header__in
+		@extend %in
+		+clr
+		padding: 25px 0 29px
+		position: relative
+	.header__logo
+		float: left
+		+s(logo)
+		+hide-text
+	.search
+		position: absolute
+		right: 150px 
+		top: 35px 
+		width: 270px 
+		input
+			border: 1px solid #B4D6E8 
+			border-radius: 2px 
+			color: #B4D6E8
+			font-size: 24px  
+			padding: 4px 13px
+			width: 270px - 13px - 13px - 2px
+			background: transparent
+			+placeholder-color(#B4D6E8)   
+	.social
+		position: absolute
+		top: 42px 
+		right: 0
+		text-align: right
+		a
+			display: inline-block
+			margin-left: 20px 
+			vertical-align: middle
+		@each $s in fb,vk,ok,in
+			.social__#{$s}
+				+s(social__#{$s})
+	
+.nav
+	text-align: center
+	text-transform: uppercase
+	padding: 30px 0 25px 
+	ul
+		list-style: none
+	li
+		display: inline-block
+		margin: 0 15px
+	a
+		text-decoration: none
+		font-size: 30px 
+		color: #000000
+.loadmoarnews
+	clear: both
+	padding-bottom: 50px 
+	padding-top: 40px 
+	text-align: center
+	font-size: 30px 
+	a
+		color: #1E7AA9 
+.footer
+	.footer__in
+		@extend %in
+		padding-top: 14px 
+		border-top: 1px solid #010101 
+		padding-bottom: 30px 
+	.footer__nav
+		list-style: none
+		text-align: center
+		margin-bottom: 20px 
+		li
+			display: inline-block
+			margin: 0 15px
+		a
+			text-decoration: none
+			font-size: 30px 
+			color: #000000
+	.footer__text
+		font-size: 11px 
+		line-height: 1.4
+		text-align: center
+		p
+			margin-bottom: 15px 
+		.footer__copy	
+			font-size: 14px 
+			margin-right: 30px  
