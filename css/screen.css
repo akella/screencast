@@ -34,7 +34,7 @@ a { color: #3885af; }
 .l, .topline .topline__in, .header .header__in, .footer .footer__in { width: 940px; margin: 0 auto; }
 
 .topline { background: #114b68; }
-.topline .topline__in { height: 60px; line-height: 60px; font-size: 18px; color: white; }
+.topline .topline__in { height: 60px; line-height: 60px; font-size: 18px; color: white; position: relative; }
 .topline .topline__in a { color: white; text-decoration: none; }
 .topline .topline__addpost { display: inline-block; font-weight: bold; }
 .topline .topline__addpost i { display: inline-block; background: url('../img/icons-s8c356d3a85.png') 0 -252px no-repeat; width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; position: relative; top: -2px; }
